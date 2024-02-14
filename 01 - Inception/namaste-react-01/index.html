@@ -7,7 +7,22 @@
 </head>
 <body>
   <div id="root"></div>
+  
+  <!-- Injecting CDN React -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Creating the Hello World using React -->
+  <script>
+    // Creation of our element using React
+    const heading = React.createElement("h1", {}, "Hello World from React!");
+
+    // React needs a root to work on, creating the root using our div element earlier.
+    // Everything that we will render, we will render inside this root.
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+    // Rendering our elements in our root
+    root.render(heading);
+  </script>
 </body>
 </html>
