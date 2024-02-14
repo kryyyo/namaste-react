@@ -59,5 +59,5 @@ console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // Rendering our elements in our root. This is the one who is converting the object to element.
-// root.render() replaces anything and everything that is currently inside the root element
+// root.render() replaces anything and everything that is currently ONLY inside the root element
 root.render(parent);
