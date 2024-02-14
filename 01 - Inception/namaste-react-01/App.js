@@ -5,6 +5,8 @@ const heading = React.createElement(
   "Hello World from React!"
 );
 
+console.log(heading); // not an actual h1 tag yet! this is an object
+
 // React needs a root to work on, creating the root using our div element earlier.
 // Everything that we will render, we will render inside this root.
 const root = ReactDOM.createRoot(document.getElementById("root"));
