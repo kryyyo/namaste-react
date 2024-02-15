@@ -69,7 +69,7 @@ But you don't need to put node_modules in git
 - whatever you can regenerate, don't put it on git!
 
 
-Building our app using parcel
+Building our app using parcel (dev build)
 1. npx parcel index.html
   ![terminal-after-running-npx-parcel](image-1.png)
   ![the-app-hosted-on-localhost-1234](image-2.png)
@@ -77,3 +77,47 @@ Building our app using parcel
 npm vs. npx
 - npm -> installing the packages
 - npx -> executing the packages
+
+
+CDN Links is not a preferred way to bring React and ReactDOM into our project
+- it will make network calls
+- we have to keep changing the version inside the html file instead of our package.json
+
+
+Installing React & ReactDOM to our project as a normal dependencies
+1. npm install react
+2. npm install react-dom
+shortcut for `npm install` is `npm i`
+
+type=module
+- needed so we can import packages
+- normal browser scripts cannot have imports
+
+What Parcel is doing for you?
+- Dev Build
+- Local Server
+- HMR (Hot Module Replacement) - as soon as you save the file, it will reflect your changes
+- File Watching Algorithm - written in C++
+- Caching - Faster Builds
+- Image Optimization
+- Minification for Production build
+- Bundling
+- Compress your files
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - support older browsers
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code for you!
+- Different dev and prod bundles
+
+Creating a Prod Build
+1. remove "main": App.js in package.json because we will be using index.html in parcel
+2. npx parcel build index.html
+
+Prod build is added to dist folder
+![npx-parcel-build-index.html](image-3.png)
+
+the one inside the dist folder is the one we are seeing in the browser, not our code itself, these are the production ready code!
+![main-three-files-in-dist-folder](image-4.png)

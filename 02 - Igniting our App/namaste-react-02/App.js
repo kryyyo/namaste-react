@@ -1,19 +1,5 @@
-/**
- * 
- * <div id="parent">
- *    <div id="child">
- *      <h1>I'm h1 tag</h1>
- *      <h2>I'm h2 tag</h2>
- *    </div>
- *    <div id="child2">
- *      <h1>I'm h1 tag</h1>
- *      <h2>I'm h2 tag</h2>
- *    </div>
- * </div>
- * 
- * ReactElement(Object) => HTML(Browser Understands)
- * 
- */
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement(
   "div",
@@ -24,7 +10,7 @@ const parent = React.createElement(
       { id: "child" },
       // Creating siblings -> use array in the 3rd argument!
       [
-        React.createElement("h1", {}, "I'm h1 tag"),
+        React.createElement("h1", {}, "This is Namaste React"),
         React.createElement("h2", {}, "I'm h2 tag")
       ]
     ),
