@@ -121,3 +121,10 @@ Prod build is added to dist folder
 
 the one inside the dist folder is the one we are seeing in the browser, not our code itself, these are the production ready code!
 ![main-three-files-in-dist-folder](image-4.png)
+
+
+Configuring our package.json's browserslist
+- this is to tell what all the browsers should your app be supported in
+- not necessarily it will only run in those versions, it will 100% run in the versions you specify, and may or may not run in the versions you did not specify
+- Example: ![browserslist-config-in-package-json](image-6.png)
+- this is where you can reference what you will add to browserslist config: https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
