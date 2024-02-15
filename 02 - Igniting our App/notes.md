@@ -67,3 +67,13 @@ But you don't need to put node_modules in git
 - usually inside `.gitignore`
 - as long as you have package.json and package-lock.json -> you can regenerate node_modules using `npm install` again
 - whatever you can regenerate, don't put it on git!
+
+
+Building our app using parcel
+1. npx parcel index.html
+  ![terminal-after-running-npx-parcel](image-1.png)
+  ![the-app-hosted-on-localhost-1234](image-2.png)
+
+npm vs. npx
+- npm -> installing the packages
+- npx -> executing the packages
