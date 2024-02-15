@@ -1,0 +1,22 @@
+{
+  "name": "namaste-react-02",
+  "version": "1.0.0",
+  "description": "igniting our app",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kryyyo/namaste-react.git"
+  },
+  "author": "kryo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kryyyo/namaste-react/issues"
+  },
+  "homepage": "https://github.com/kryyyo/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
