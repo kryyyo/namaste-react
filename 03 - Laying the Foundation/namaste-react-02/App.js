@@ -1,49 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  [
-    React.createElement(
-      "div",
-      { id: "child" },
-      // Creating siblings -> use array in the 3rd argument!
-      [
-        React.createElement("h1", {}, "This is Namaste React"),
-        React.createElement("h2", {}, "I'm h2 tag")
-      ]
-    ),
-    React.createElement(
-      "div",
-      { id: "child2" },
-      // Creating siblings -> use array in the 3rd argument!
-      [
-        React.createElement("h1", {}, "I'm h1 tag"),
-        React.createElement("h2", {}, "I'm h2 tag")
-      ]
-    ),
-  ]
-);
+// React.createElement => React Element (Object) => render => DOM/HTML Element
 
-/**
- * 
-// Creation of our element using React
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },                    // second args is for the attributes of a tag
-  "Hello World from React!"
-);
+// React Element (kind of equal to DOM Elements)
+const heading = React.createElement("h1", {id: "heading"}, "Namaste React 🐱‍🏍"); // not an HTML Element, but an Object 
 
-console.log(heading); // not an actual h1 tag yet! this is an object
- */
-
-console.log(parent);
-
-// React needs a root to work on, creating the root using our div element earlier.
-// Everything that we will render, we will render inside this root.
+// Creating the root where we will render our React Element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// Rendering our elements in our root. This is the one who is converting the object to element.
-// root.render() replaces anything and everything that is currently ONLY inside the root element
-root.render(parent);
+// When we render the React Element to the DOM, then it becomes an HTML Element
+root.render(heading);
