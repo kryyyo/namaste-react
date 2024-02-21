@@ -33,3 +33,14 @@ Babel
 - not created by Facebook! (not React!)
 - JSX => transpiled => React.createElement => React Element (Object) => render => DOM/HTML Element
 ![babel-compiler-in-action-playground](image-1.png)
+
+
+
+HTML VS JSX
+- HTML: "class" , JSX: "className"
+![html-class](image-2.png)
+![JSX-className](image-3.png)
+![DOM-rendered](image-4.png)
+
+- JSX attributes -> camelCase
+- JSX needs to be wrapped in parenthesis for multiline - required so Babel will know when will it stop transpiling JSX

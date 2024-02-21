@@ -9,8 +9,13 @@ console.log(heading); // => Object
 
 // JSX - is just a syntax not React itself, HTML/XML-like syntax
 // JSX (transpiled before it reaches the JS) - PARCEL - Babel
-// JSX => transpiled => React.createElement => React Element (Object) => render => DOM/HTML Element
-const jsxHeading = <h1 id="heading">Namaste React using JSX 🐱‍🏍</h1>; // not HTML syntax, but JSX syntax! -> Still an Object (React Element)!!
+// JSX => Babel transpiles => React.createElement => React Element (Object) => render => DOM/HTML Element
+// not HTML syntax, but JSX syntax! -> Still an Object (React Element)!!
+const jsxHeading = (
+  <h1 id="heading" className="root">
+    Namaste React using JSX 🐱‍🏍
+  </h1>
+); 
 console.log(jsxHeading); // => Object
 
 // Creating the root where we will render our React Element
