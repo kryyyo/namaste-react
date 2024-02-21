@@ -44,3 +44,15 @@ HTML VS JSX
 
 - JSX attributes -> camelCase
 - JSX needs to be wrapped in parenthesis for multiline - required so Babel will know when will it stop transpiling JSX
+
+React Components (2 Types)
+1. Class Based Component = OLD
+2. Functional Component = NEW
+
+
+React Functional Component
+- just a normal JS Function that returns a JSX Element/React Element
+- just Capitalize the first letter when creating a functional component
+![react-functional-component](image-6.png)
+![other-syntax-implicit-return](image-7.png)
+![nested-react-elements](image-8.png)
