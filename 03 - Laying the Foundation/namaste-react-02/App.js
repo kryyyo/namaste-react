@@ -23,13 +23,16 @@ import ReactDOM from "react-dom/client";
  * );
  */
 
-const TitleNormalFunction = function () {
-  return (
-    <h1 className="head" tabIndex={5}>
-      Namaste React using JSX 🐱‍🏍
-    </h1>
-  );
+/**
+ * Functional Component using normal functions
+ * const TitleNormalFunction = function () {
+ *  return (
+ *    <h1 className="head" tabIndex={5}>
+ *      Namaste React using JSX 🐱‍🏍
+ *    </h1>
+ *  );
 };
+ */
 
 const Title = () => (
   <h1 className="head" tabIndex={5}>
@@ -37,9 +40,11 @@ const Title = () => (
   </h1>
 );
 
+const number = 10000;
+
 const HeadingComponent = () => (
   <div id="container">
-    <Title />
+    <h2>{100 + 300}</h2>
     <h1 className="heading">
       Namaste React Functional Component
     </h1>

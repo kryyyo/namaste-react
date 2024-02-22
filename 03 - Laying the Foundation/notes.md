@@ -68,3 +68,9 @@ Some interviews called this "Component Composition"
 
 Note: you can use a normal function in writing components
 ![normal-functions](image-12.png)
+
+
+Writing JS Expressions inside the JSX Component using Curly Braces
+![writing-js-expression-inside-JSX](image-13.png)
+![dom-js-expression-inside-JSX](image-14.png)
+![any-js-expression](image-15.png)
