@@ -83,3 +83,6 @@ You can also write the React Element since it is also JS
 Cross-site scripting (XSS)
 - attack in which an attacker injects malicious executable scripts into the code of a trusted application or website
 - but JSX is so amazing that it takes care of this injection attacks! It will sanitize data before parsing it!
+
+Two ways of writing
+![two-ways-of-writing-react-functional-component](image-19.png)
