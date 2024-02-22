@@ -14,23 +14,24 @@ import ReactDOM from "react-dom/client";
  * not HTML syntax, but JSX syntax! -> Still an Object (React Element)!!
  */
 
-// React Element
-const heading = (
-  <h1 id="heading" className="root">
+/**
+ * React Element
+ * const heading = (
+ *  <h1 id="heading" className="root">
+ *    Namaste React using JSX 🐱‍🏍
+ *  </h1>
+ * );
+ */
+
+const Title = () => (
+  <h1 className="head" tabIndex={5}>
     Namaste React using JSX 🐱‍🏍
   </h1>
 );
 
-// React Functional Component
-const Heading = () => (
-  <h1 id="heading" className="root">
-    Namaste React using JSX 🐱‍🏍
-  </h1>
-);
-
-// React Functional Component
 const HeadingComponent = () => (
-  <div>
+  <div id="container">
+    <Title />
     <h1 className="heading">
       Namaste React Functional Component
     </h1>

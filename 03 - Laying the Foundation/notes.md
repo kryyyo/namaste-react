@@ -60,3 +60,8 @@ React Functional Component
 Rendering a Functional Component
 ![rendered-functional-component-inside-DOM](image-9.png)
 ![rendering-in-js](image-10.png)
+
+
+Some interviews called this "Component Composition"
+- composing two or more functional components into one
+![component-composition](image-11.png)
