@@ -74,3 +74,8 @@ Writing JS Expressions inside the JSX Component using Curly Braces
 ![writing-js-expression-inside-JSX](image-13.png)
 ![dom-js-expression-inside-JSX](image-14.png)
 ![any-js-expression](image-15.png)
+
+You can also write the React Element since it is also JS
+![react-element-in-jsx](image-16.png)
+![react-element-in-jsx-in-dom](image-17.png)
+![react-elem-in-jsx](image-18.png)
