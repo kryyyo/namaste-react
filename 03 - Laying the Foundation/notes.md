@@ -89,3 +89,6 @@ Two ways of writing
 
 You can also call the functional component since it is a normal JS function at the end of the day (but not conventional)
 ![calling-the-functional-component-as-JS-function](image-20.png)
+
+Options for the 'type' attribute in script tag
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-type
