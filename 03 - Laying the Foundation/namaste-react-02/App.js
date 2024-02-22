@@ -37,11 +37,9 @@ import ReactDOM from "react-dom/client";
 const elem = <span>title</span>
 
 const HeadingComponent = () => (
-  <div id="container">
-    <h1 className="heading">
-      Namaste React Functional Component
-    </h1>
-  </div>
+  <h1 className="heading">
+    Namaste React Functional Component
+  </h1>
 );
 
 const title = (
