@@ -74,8 +74,8 @@ Framework
 
 
 
+Additional note on 'async' and 'defer' attribute for scripts
+![how-they-are-executed-with-html](image-7.png)
 
-
-Homeworks:
-1. CDN
-2. crossorigin
+- 'async' does NOT guarantee order of execution! not advisable for dependent scripts (scripts dependent on other scripts)
+- 'defer' guarantees and maintains order of execution!
