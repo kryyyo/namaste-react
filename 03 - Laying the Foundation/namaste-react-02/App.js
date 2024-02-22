@@ -42,8 +42,7 @@ const Title = () => (
 
 const HeadingComponent = () => (
   <h1 className="heading">
-    <Title></Title>
-    <Title />
+    {Title()}
     Namaste React Functional Component
   </h1>
 );

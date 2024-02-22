@@ -86,3 +86,6 @@ Cross-site scripting (XSS)
 
 Two ways of writing
 ![two-ways-of-writing-react-functional-component](image-19.png)
+
+You can also call the functional component since it is a normal JS function at the end of the day (but not conventional)
+![calling-the-functional-component-as-JS-function](image-20.png)
