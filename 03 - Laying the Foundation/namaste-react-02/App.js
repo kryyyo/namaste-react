@@ -36,22 +36,20 @@ import ReactDOM from "react-dom/client";
 
 const elem = <span>title</span>
 
-const title = (
-  <h1 className="head" tabIndex={5}>
-    {elem}
-    Namaste React using JSX 🐱‍🏍
-  </h1>
-);
-
-const number = 10000;
-
 const HeadingComponent = () => (
   <div id="container">
-    {title}
     <h1 className="heading">
       Namaste React Functional Component
     </h1>
   </div>
+);
+
+const title = (
+  <h1 className="head" tabIndex={5}>
+    {elem}
+    Namaste React using JSX 🐱‍🏍
+    <HeadingComponent />
+  </h1>
 );
 
 // Creating the root where we will render our React Element
@@ -63,4 +61,4 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // RENDERING REACT FUNCTIONAL COMPONENT
 // Babel understands this syntax and will transpile it to React Element
-root.render(<HeadingComponent />);
+root.render(title);
