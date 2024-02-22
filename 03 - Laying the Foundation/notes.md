@@ -65,3 +65,6 @@ Rendering a Functional Component
 Some interviews called this "Component Composition"
 - composing two or more functional components into one
 ![component-composition](image-11.png)
+
+Note: you can use a normal function in writing components
+![normal-functions](image-12.png)

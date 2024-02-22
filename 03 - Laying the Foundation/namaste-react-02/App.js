@@ -23,6 +23,14 @@ import ReactDOM from "react-dom/client";
  * );
  */
 
+const TitleNormalFunction = function () {
+  return (
+    <h1 className="head" tabIndex={5}>
+      Namaste React using JSX 🐱‍🏍
+    </h1>
+  );
+};
+
 const Title = () => (
   <h1 className="head" tabIndex={5}>
     Namaste React using JSX 🐱‍🏍
