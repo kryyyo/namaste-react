@@ -40,5 +40,10 @@ const HeadingComponent = () => (
 // Creating the root where we will render our React Element
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+// RENDERING REACT ELEMENT
 // When we render the React Element to the DOM, then it becomes an HTML Element
-root.render(heading);
+// root.render(heading);
+
+// RENDERING REACT FUNCTIONAL COMPONENT
+// Babel understands this syntax and will transpile it to React Element
+root.render(<HeadingComponent />);

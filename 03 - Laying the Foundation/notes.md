@@ -56,3 +56,7 @@ React Functional Component
 ![react-functional-component](image-6.png)
 ![other-syntax-implicit-return](image-7.png)
 ![nested-react-elements](image-8.png)
+
+Rendering a Functional Component
+![rendered-functional-component-inside-DOM](image-9.png)
+![rendering-in-js](image-10.png)
