@@ -79,3 +79,7 @@ You can also write the React Element since it is also JS
 ![react-element-in-jsx](image-16.png)
 ![react-element-in-jsx-in-dom](image-17.png)
 ![react-elem-in-jsx](image-18.png)
+
+Cross-site scripting (XSS)
+- attack in which an attacker injects malicious executable scripts into the code of a trusted application or website
+- but JSX is so amazing that it takes care of this injection attacks! It will sanitize data before parsing it!
