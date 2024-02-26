@@ -50,7 +50,10 @@ const Header = () => {
  * }
  */
 
-const RestaurantCard = ({resName, cuisine}) => {
+const RestaurantCard = (props) => {
+
+  const { resName, cuisine } = props;
+  
   return (
     // Inline Style in JSX
     <div
