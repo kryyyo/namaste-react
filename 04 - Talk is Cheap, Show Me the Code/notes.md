@@ -12,3 +12,31 @@ props
 - passing in the functional component:
     ![props-in-functional-component](image-2.png)
     ![logging-of-props](image-3.png)
+
+
+Config-Driven UI
+- website is driven by data
+- eg. different carousel for different locations
+- sample config from backend:
+```
+"cards": [
+  {
+    "cardType": "carousel",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {},
+    "parentWidget": false
+  },
+  {
+    "cardType": "carousel",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {},
+    "parentWidget": false
+  },
+  {
+    "cardType": "seeAllRestaurants",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {},
+    "parentWidget": false
+  }
+]
+```

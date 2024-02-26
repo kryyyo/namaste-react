@@ -51,7 +51,6 @@ const Header = () => {
  */
 
 const RestaurantCard = (props) => {
-
   const { resName, cuisine } = props;
   
   return (
