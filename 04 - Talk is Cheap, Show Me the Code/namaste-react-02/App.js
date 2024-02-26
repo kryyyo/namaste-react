@@ -50,7 +50,7 @@ const Header = () => {
  * }
  */
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
   return (
     // Inline Style in JSX
     <div
@@ -65,8 +65,8 @@ const RestaurantCard = () => {
         alt="meghana-foods-logo"
         src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/3/21/0/fnd_pasta-istock.jpg.rend.hgtvcom.1280.720.suffix/1490188710731.jpeg"
       />
-      <h3>Meghana Foods</h3>
-      <h4>Biryani, North Indian, Asian</h4>
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
       <h4>4.4 stars</h4>
       <h4>38 minutes</h4>
     </div>
@@ -82,23 +82,14 @@ const Body = () => {
       </div>
       {/* Restaurant Container */}
       <div className="res-container">
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
-        <RestaurantCard />
+        <RestaurantCard
+          resName="Meghana Foods"
+          cuisine="Biryani, North Indian, Asian"
+        />
+        <RestaurantCard
+          resName="KFC"
+          cuisine="Burger, Fast food, American"
+        />
       </div>
     </div>
   )
