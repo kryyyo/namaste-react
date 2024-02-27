@@ -41,6 +41,13 @@ Config-Driven UI
 ]
 ```
 
-
 Cloudinary
 - a CDN for image hosting
+
+key in mapped component
+- should always have a key property whenever you are looping in an array and returning a functional component (mapping)
+- key={<unique identifier>}
+- important for sorting, for rerendering optimization
+![no-key-rerendering](image-5.png)
+- React will know that the component is already existing if there is a key to prevent double rendering
+- DO NOT USE `index` (2nd property of the map array) as key! https://dev.to/shiv1998/why-not-to-use-index-as-key-in-react-lists-practical-example-3e66

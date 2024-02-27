@@ -50,19 +50,35 @@ const Header = () => {
  * }
  */
 
-const resObj = {
-  data: {
-    resName: "Meghana Foods",
-    cuisine: ["Biryani", "North Indian", "Asian"],
-    rating: 4.4,
-    deliveryTime: 38,
-    costForTwo: 40000,
-    cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf"
+const resList = [
+  {
+    data: {
+      id: 1,
+      resName: "Meghana Foods",
+      cuisine: ["Biryani", "North Indian", "Asian"],
+      rating: 4.4,
+      deliveryTime: 38,
+      costForTwo: 40000,
+      cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf"
+    },
   },
-}
+  {
+    data: {
+      id: 2,
+      resName: "KFC",
+      cuisine: ["American", "Fries"],
+      rating: 4.8,
+      deliveryTime: 40,
+      costForTwo: 50000,
+      cloudinaryImageId: "03501c33ecb3a3105124441e541e6fe4"
+    },
+  }
+]
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+
+  const { cloudinaryImageId, resName, cuisine, rating, deliveryTime, costForTwo } = resData?.data;
   
   return (
     // Inline Style in JSX
@@ -76,13 +92,14 @@ const RestaurantCard = (props) => {
       <img
         className="res-logo"
         alt="meghana-foods-logo"
-        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${resData.data.cloudinaryImageId}`}
+        height="200px"
+        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
       />
-      <h3>{resData.data.resName}</h3>
-      <h4>{resData.data.cuisine.join(", ")}</h4>
-      <h4>{resData.data.rating} stars</h4>
-      <h4>{resData.data.deliveryTime} minutes</h4>
-      <h4>${resData.data.costForTwo / 100} FOR TWO</h4>
+      <h3>{resName}</h3>
+      <h4>{cuisine.join(", ")}</h4>
+      <h4>{rating} stars</h4>
+      <h4>{deliveryTime} minutes</h4>
+      <h4>${costForTwo / 100} FOR TWO</h4>
     </div>
   )
 }
@@ -96,7 +113,9 @@ const Body = () => {
       </div>
       {/* Restaurant Container */}
       <div className="res-container">
-        <RestaurantCard resData={resObj} />
+        {resList.map(restaurant => (
+          <RestaurantCard key={restaurant.data.id} resData={restaurant} />
+        ))}
       </div>
     </div>
   )
