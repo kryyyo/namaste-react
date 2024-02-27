@@ -40,3 +40,7 @@ Config-Driven UI
   }
 ]
 ```
+
+
+Cloudinary
+- a CDN for image hosting

@@ -50,8 +50,19 @@ const Header = () => {
  * }
  */
 
+const resObj = {
+  data: {
+    resName: "Meghana Foods",
+    cuisine: ["Biryani", "North Indian", "Asian"],
+    rating: 4.4,
+    deliveryTime: 38,
+    costForTwo: 40000,
+    cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf"
+  },
+}
+
 const RestaurantCard = (props) => {
-  const { resName, cuisine } = props;
+  const { resData } = props;
   
   return (
     // Inline Style in JSX
@@ -65,12 +76,13 @@ const RestaurantCard = (props) => {
       <img
         className="res-logo"
         alt="meghana-foods-logo"
-        src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/3/21/0/fnd_pasta-istock.jpg.rend.hgtvcom.1280.720.suffix/1490188710731.jpeg"
+        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${resData.data.cloudinaryImageId}`}
       />
-      <h3>{resName}</h3>
-      <h4>{cuisine}</h4>
-      <h4>4.4 stars</h4>
-      <h4>38 minutes</h4>
+      <h3>{resData.data.resName}</h3>
+      <h4>{resData.data.cuisine.join(", ")}</h4>
+      <h4>{resData.data.rating} stars</h4>
+      <h4>{resData.data.deliveryTime} minutes</h4>
+      <h4>${resData.data.costForTwo / 100} FOR TWO</h4>
     </div>
   )
 }
@@ -84,14 +96,7 @@ const Body = () => {
       </div>
       {/* Restaurant Container */}
       <div className="res-container">
-        <RestaurantCard
-          resName="Meghana Foods"
-          cuisine="Biryani, North Indian, Asian"
-        />
-        <RestaurantCard
-          resName="KFC"
-          cuisine="Burger, Fast food, American"
-        />
+        <RestaurantCard resData={resObj} />
       </div>
     </div>
   )
