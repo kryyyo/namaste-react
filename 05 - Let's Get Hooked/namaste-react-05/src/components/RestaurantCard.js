@@ -14,7 +14,7 @@ const RestaurantCard = (props) => {
     > 
       <img
         className="res-logo"
-        alt="meghana-foods-logo"
+        alt={`${resName}-logo`}
         height="200px"
         src={`${CDN_URL}/${cloudinaryImageId}`}
       />
