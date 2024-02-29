@@ -22,3 +22,17 @@ Export first before you can import your component
   - standard for components!
 2. Named import `import { <importname> } from "path/<filename>"`
   - sample : ![named-import](image-1.png)
+
+UI Will not change when you just use variables like this
+![normal-js-variable](image-2.png)
+
+This in turn will be the use for hooks
+# React Hooks
+- React hooks are a NORMAL JS Utility Functions which is given to us by React!
+- from React import (as a named import)
+- how to use it? import from React!
+
+2 most important hooks
+1. useState() - super powerful state variables in React
+  - whenever a state variable changes, react will rerender the component
+2. useEffect()
