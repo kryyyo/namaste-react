@@ -35,4 +35,29 @@ This in turn will be the use for hooks
 2 most important hooks
 1. useState() - super powerful state variables in React
   - whenever a state variable changes, react will rerender the component
+  - keeps ui layer in sync with data layer
+  - returns an array
+  - its setState is the only one who can trigger the Reconciliation Algorithm!
 2. useEffect()
+
+Why React is fast?
+- because it has efficient DOM manipulation by building the Reconciliation Algorithm (Diff algorithm) over Virtual DOM
+
+# Reconciliation Algorithm (aka. React Fiber)
+- React 16
+- in React 18, called React Fiber
+- uses Diff algorithm (like in Git)
+
+# Virtual DOM
+- not an actual DOM! (opening/closing tags...etc)
+- only representation of an actual DOM
+- React create element produces an OBJECT, and this keeps the Virtual DOM with it!
+- a normal JS Object!
+
+# Diff Algorithm
+- find difference between old Virtual DOM and new Virtual DOM, update the DOM in every render cycle
+- since Virtual DOM is an Object! just like a diff in git!
+![diff-algorithm](image-3.png)
+
+# Incremental Rendering
+- ability to split rendering work into chunks and spread it out over multiple frames
