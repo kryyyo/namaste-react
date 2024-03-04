@@ -17,3 +17,10 @@ Microservices
 
 - different ports can also be deployed differently in their own domain name
 - eg: / -> UI, /api -> BE, /sms -> SMS
+
+
+2 Approaches to fetch data from BE
+![2-approaches-to-fetch-data](image-4.png)
+- number 2 approach is better in React, and we will always use this in React
+- even if it has rerender, React can handle this very fast!
+- number 2 also has better UX
