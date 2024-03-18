@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 
 const Header = () => {
+   // on rerender, buttonNameReact will be a NEW variable that is why even if it is declared as const, it is modifiable
+  const [buttonNameReact, setButtonNameReact] = useState("Login");
+
   return (
     <div className="header">
       {/* Logo */}
@@ -18,6 +22,14 @@ const Header = () => {
           <li>About Us</li>
           <li>Contact Us</li>
           <li>Cart</li>
+          <button
+            className="login"
+            onClick={() => {
+              setButtonNameReact(buttonNameReact === "Login" ? "Logout" : "Login");
+            }}
+          >
+            {buttonNameReact}
+          </button>
         </ul>
       </div>
     </div>

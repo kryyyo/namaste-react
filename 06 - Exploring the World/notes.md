@@ -47,3 +47,6 @@ Preflight requests are not always done, it is depending on the browser if it wil
 Shimmer UI
 - https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17
 - loading a fake page (skeleton) til the data is loaded
+
+Why do we need state variables?
+- this is so React can keep track on what is changed, making it more efficient in reconciliation and dom manipulation
