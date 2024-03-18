@@ -24,3 +24,22 @@ Microservices
 - number 2 approach is better in React, and we will always use this in React
 - even if it has rerender, React can handle this very fast!
 - number 2 also has better UX
+
+
+CORS Policy
+- our *browser* is the one blocking us to call from one origin (Swiggy) to another origin (localhost)
+- browser security
+- different domains and even different protocols are not allowed:
+![some-of-the-things-that-are-not-allowed-due-to-CORS-policy](image-5.png)
+- but because we are now using microservices these days, resource sharing must be allowed and standardized, and this is where CORS (Cross Origin Resource Sharing) comes into place
+
+How CORS works?
+- a preflight option called is made before the actual api call
+![how-api-is-called-with-CORS](image-6.png)
+
+Additional HTTP headers (commonly used)
+1. [access-control-allow-origin: *] -> (star) any domain outside of its domain can access this
+  eg. if https://akshaysaini.in is inside this star, it will now be allowed to make an api call in origin 2
+  ![origin-1-can-now-access-origin-2](image-7.png)
+
+Preflight requests are not always done, it is depending on the browser if it will tag the request as a simple api call
