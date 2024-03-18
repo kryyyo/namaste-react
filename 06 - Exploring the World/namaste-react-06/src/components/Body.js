@@ -25,11 +25,12 @@ const Body = () => {
     setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
 
+  // Conditional Rendering
   if (listOfRestaurants.length === 0) {
     return <Shimmer />;
   }
 
-  return (
+  return (listOfRestaurants === 0 ? <Shimmer /> : 
     <div className="body">
       {/* Search */}
       <div className="filter">
