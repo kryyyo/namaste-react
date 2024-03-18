@@ -43,3 +43,7 @@ Additional HTTP headers (commonly used)
   ![origin-1-can-now-access-origin-2](image-7.png)
 
 Preflight requests are not always done, it is depending on the browser if it will tag the request as a simple api call
+
+Shimmer UI
+- https://medium.com/lattice-what-is/shimmer-ui-a-better-way-to-show-loading-states-aa1f4e563d17
+- loading a fake page (skeleton) til the data is loaded
