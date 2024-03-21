@@ -50,3 +50,4 @@ Shimmer UI
 
 Why do we need state variables?
 - this is so React can keep track on what is changed, making it more efficient in reconciliation and dom manipulation
+- whenever state variables update, react triggers a reconciliation cycle (re-renders the component)
