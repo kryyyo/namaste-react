@@ -11,8 +11,7 @@ const Header = () => {
   // if has dependency array and not empty, it will call on the initial render, and when the dependencies change
   useEffect(() => {
     console.log("useEffect called");
-  }, [buttonNameReact
-  ])
+  }, [buttonNameReact])
 
   return (
     <div className="header">
