@@ -22,3 +22,13 @@ useRouterError
 - Important hook provided by react-router-dom to provide more details about the error
 ![using-use-router-error](image-6.png)
 ![what-the-error-details-are](image-7.png)
+
+Children Routes
+![children-routes](image-9.png)
+
+How to use these children routes? 
+1. import Outlet component from react-router-dom
+2. add the Outlet inside your AppLayout component
+![Outlet-inside-app-layout](image-10.png)
+3. Whenever this is rendered, it will render the children components depending on the path
+Note: Outlet will not be seen in your HTML. only the component that the outlet has rendered based on the path.
