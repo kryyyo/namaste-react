@@ -39,3 +39,11 @@ Updating States
 - only the key-value pair in the object passed inside the setState will be updated
 - all other key-value pair will not be touched.
 ![updating-the-state-of-count](image-8.png)
+
+
+componentDidMount() {} method
+- once the component is rendered, this one will be called
+- life cycle of parent and child components:
+![parent-child-mount](image-9.png)
+- only when the children components are done mounted (all componentDidMount() of the children are called)
+- then the parent component will be done mounting (componentDidMount() of the parent will be called)
