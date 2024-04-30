@@ -19,3 +19,17 @@ Accessing props
 
 We can also destructure the props inside the render function
 ![destructuring-the-props](image-4.png)
+
+Creating States
+- also created inside constructor
+- using `this.state = {}` object
+![state-variable-inside-constructor](image-5.png)
+
+Accessing States
+- this.state.<state-name>
+- with destructuring:
+![destructuring-this-state](image-6.png)
+
+Multiple States
+- all states should be inside the this.state object
+-![multi-states](image-7.png)
