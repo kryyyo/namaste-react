@@ -33,3 +33,9 @@ Accessing States
 Multiple States
 - all states should be inside the this.state object
 -![multi-states](image-7.png)
+
+Updating States
+- this.setState(<object of the updated state variables>)
+- only the key-value pair in the object passed inside the setState will be updated
+- all other key-value pair will not be touched.
+![updating-the-state-of-count](image-8.png)
