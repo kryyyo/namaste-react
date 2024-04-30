@@ -49,3 +49,22 @@ componentDidMount() {} method
 
 use cases for componentDidMount()
 - to make API calls after mounting components
+
+Life Cycle with Multiple Children
+1. Parent Constructor
+2. Parent Render
+    a. Child 1 Constructor
+    b. Child 1 Render
+    c. Child 2 Constructor
+    d. Child 2 Render
+
+    <DOM UPDATED - IN SINGLE BATCH>
+    e. Child 1 componentDidMount()
+    f. Child 2 componentDidMount()
+3. Parent componentDidMount()
+- This is the order because React is optimizing!
+![React-life-cycle-diagram](image-10.png)
+- it will first finish all the render phase of the children (batching)
+
+DOM Manipulation
+- most expensive process in React
