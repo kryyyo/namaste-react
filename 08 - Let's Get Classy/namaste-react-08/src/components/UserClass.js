@@ -5,36 +5,52 @@ class UserClass extends React.Component {
     super(props);
 
     this.state = {
-      count: 0,
-      count2: 2,
+      userInfo: {
+        name: "Dummy",
+        location: "Default",
+        avatar_url: "http://dummy-photo.com"
+      }
     }
 
-    console.log(this.props.name + "Child Constructor")
+    // console.log(this.props.name + "Child Constructor")
   }
 
-  componentDidMount() {
-    console.log(this.props.name + "Child Component Did Mount")
+  async componentDidMount() {
+    // // console.log(this.props.name + "Child Component Did Mount")
+    // this.timer = setInterval(() => console.log("NAMASTE REACT OP"), 1000);
+
+    // API Call
+    const data = await fetch("https://api.github.com/users/kryyyo");
+    const json = await data.json();
+
+    this.setState({
+      userInfo: json,
+    })
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    // counter part of having dependency array in useEffect:
+    if (
+      this.state.className !== prevState.className ||
+      this.state.userInfo !== prevState.userInfo
+    ) {
+      // code
+    }
+    console.log("Component Did Update");
+  }
+
+  componentWillUnmount() {
+    // clearInterval(this.timer);
+    console.log("Component will unmount")
   }
 
   render() {
-    const { name, location } = this.props;
-    const { count } = this.state;
-
-    console.log(this.props.name + "Child Render")
+    // const { name, location } = this.props;
+    const { name, location, avatar_url } = this.state.userInfo;
+    // console.log(this.props.name + "Child Render")
     return (
       <div className="user-card">
-        <h1>Count: {count}</h1>
-        <button
-          onClick={() => {
-            // NEVER UPDATE STATE VARIABLES DIRECTLY
-            // this.state.count = this.state.count + 1;
-            this.setState({
-              count: this.state.count + 1,
-            })
-          }}
-        >
-          Count Increase
-        </button>
+        <img src={avatar_url} alt="avatar-url" />
         <h2>Name: {name}</h2>
         <h3>Location: {location}</h3>
         <h4>Contact: @akshaymarch7</h4>

@@ -25,9 +25,9 @@ const Body = () => {
 
     const json = await data.json();
     // Optional Chaining - good way of handling data
-    const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    setListOfRestaurants(restaurants);
-    setFilteredRestaurants(restaurants)
+    // const restaurants = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    // setListOfRestaurants(restaurants);
+    // setFilteredRestaurants(restaurants)
   }
 
   // Conditional Rendering

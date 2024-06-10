@@ -68,3 +68,34 @@ Life Cycle with Multiple Children
 
 DOM Manipulation
 - most expensive process in React
+
+You can make componentDidMount as async
+![component-did-mount-async-api-call](image-11.png)
+
+
+Mounting Life Cycle
+1. Constructor (dummy)
+2. Render (dummy)
+3.      <HTML Dummy>
+4. componentDidMount
+5.      <API Call>
+6.      <this.setState> -> state variable is updated
+
+Updating Life Cycle
+1. render(API Data)
+2. <HTML (new API Data)>
+3. componentDidUpdate
+
+Unmounting Life Cycle
+1. componentWillUnmount - just before component is unmounted
+
+
+In class-based, you should always clean up using componentWillUnmount
+In useEffect, you should also clean up using unmount function of useEffect (return function)
+- useEffect(() => {
+    <!-- function to run on mount -->
+
+    return () => {
+        <!-- function to run before unmounting -->
+    }
+}, [])
