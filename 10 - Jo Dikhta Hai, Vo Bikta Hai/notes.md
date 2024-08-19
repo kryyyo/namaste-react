@@ -1,3 +1,4 @@
+# Different Ways to Add CSS
 Normal CSS
 - index.css, className attribute
 
@@ -15,3 +16,10 @@ UI Libraries Examples
 - Tailwind CSS
 - Chakra UI
 - Ant Design
+
+# Tailwind CSS
+Tailwind CSS
+- for parcel: https://tailwindcss.com/docs/guides/parcel
+
+Postcss
+- Transform CSS with the power of JavaScript
