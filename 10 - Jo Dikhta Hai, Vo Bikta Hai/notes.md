@@ -23,3 +23,16 @@ Tailwind CSS
 
 Postcss
 - Transform CSS with the power of JavaScript
+
+If you want to have a customized value in tailwind, use brackets
+- eg: width for 200px will be equal to w-[200px]
+
+CTRL + Spacebar if extension is not making suggestions
+
+Tailwind Pros
+- do not need to move files
+- very lightweight, bundling will only include css that is required for our app
+
+Tailwind Cons
+- long classNames
+- high initial learning curve (but its extension makes it easier!)
