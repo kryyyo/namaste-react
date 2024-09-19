@@ -15,3 +15,8 @@
 https://legacy.reactjs.org/docs/lifting-state-up.html
 
 # Props Drilling
+- passing props to children of children
+
+# React Context
+https://react.dev/learn/passing-data-deeply-with-context
+

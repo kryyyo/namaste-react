@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   // on rerender, buttonNameReact will be a NEW variable that is why even if it is declared as const, it is modifiable
@@ -9,6 +10,8 @@ const Header = () => {
   
   // Check online status
   const onlineStatus = useOnlineStatus();
+
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className="flex justify-between bg-pink-100 shadow-xl px-4 sm:bg-yellow-200 lg:bg-green-200">
@@ -55,6 +58,8 @@ const Header = () => {
           >
             {buttonNameReact}
           </button>
+
+          <li className="px-4 font-bold">{loggedInUser}</li>
         </ul>
       </div>
     </div>
