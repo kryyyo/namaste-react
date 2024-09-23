@@ -5,9 +5,13 @@ Note:
 Redux
 - has redux dev tools in chrome
 
-Redux Toolkit
-- https://redux-toolkit.js.org/introduction/getting-started
-
-
 # How Redux Work
 ![redux-flow-writing-and-reading](image.png)
+
+# Redux Toolkit
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (cartSlice)
+- Dispatch (action)
+- Selector
