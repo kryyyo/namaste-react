@@ -38,3 +38,6 @@ reducers are for slices
 
 # Redux uses Immer package for abstracting the old implementation
 https://immerjs.github.io/immer/
+
+# RTK Query
+https://redux-toolkit.js.org/rtk-query/overview
