@@ -6,9 +6,11 @@ const RestaurantItemList = ({items}) => {
 
   const dispatch = useDispatch();
 
-  const handleAddItem = () => {
+  const handleAddItem = (item) => {
     // Dispatch an action
-    dispatch(addItem("pizza"));
+    dispatch(addItem(item));
+
+    // note that redux already abstracted the creation of payload object { payload: ... }
   }
 
   return (
@@ -26,7 +28,7 @@ const RestaurantItemList = ({items}) => {
             <div className="absolute">
               <button
                 className="p-2 rounded-lg bg-black text-white shadow-lg"
-                onClick={handleAddItem}
+                onClick={() => handleAddItem(item)}
               >
                 Add +
               </button>
