@@ -17,7 +17,9 @@
 - Configure Parcel Config to disable default babel transpilation
 - Jest Configuration
 - Install jsdom library
-
+- Install @babel/preset-react - to make JSX Work in tests cases
+- Include @babel/preset-react inside the presets of babel config
+- Include @testing-library/jest-dom
 
 # Packages for Testing in React
 1. React Testing Library
@@ -65,3 +67,10 @@ Files:
 "__" called as 'dunder';
 Dunder methods, also known as magic methods or special methods, are predefined methods in Python that have double underscores (or “dunders”) at the beginning and end of their names
 - so that no user will accidentally create these kinds of folder
+
+
+# Running Tests
+1. Install first ```npm install --save-dev @babel/preset-react```
+2. Add preset to babel.config.js ```['@babel/preset-react', {runtime: 'automatic'}]```
+- this is for converting jsx into normal html
+3. Add library @testing-library/jest-dom```npm install --save-dev @testing-library/jest-dom```
