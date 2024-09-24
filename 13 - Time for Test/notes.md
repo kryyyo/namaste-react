@@ -53,3 +53,15 @@ https://parceljs.org/languages/javascript/#usage-with-other-tools
 # JSDom Library
 https://testing-library.com/docs/react-testing-library/setup#jest-28
 ```npm install -D jest-environment-jsdom```
+
+Test File Matches
+Folder: __tests__
+Files:
+- <name>.test.ts
+- <name>.test.js
+- <name>.spec.ts
+- <name>.spec.js
+
+"__" called as 'dunder';
+Dunder methods, also known as magic methods or special methods, are predefined methods in Python that have double underscores (or “dunders”) at the beginning and end of their names
+- so that no user will accidentally create these kinds of folder
