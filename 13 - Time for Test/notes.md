@@ -9,6 +9,15 @@
 - how the user will flow across the application
 - eg. of tools: cypress, selenium
 
+# Setting Up Testing in our app
+- Install React Testing Library
+- Install Jest
+- Install Babel Dependencies for Jest
+- Configure Babel
+- Configure Parcel Config to disable default babel transpilation
+- Jest Configuration
+- Install jsdom library
+
 
 # Packages for Testing in React
 1. React Testing Library
@@ -33,3 +42,14 @@ https://parceljs.org/languages/javascript/#usage-with-other-tools
 1. create .parcelrc file in root folder
 2. paste the config
 3. it will now disable default babel transpilation - this will now use babel.config.js
+
+# Jest Configuration
+1. ```npx jest --init```
+- test environment: jsdom (JavaScript-based headless browser that can be used to create a realistic testing environment)
+- coverage report: yes
+- provider for coverage: babel
+- automatically clear: yes
+
+# JSDom Library
+https://testing-library.com/docs/react-testing-library/setup#jest-28
+```npm install -D jest-environment-jsdom```
