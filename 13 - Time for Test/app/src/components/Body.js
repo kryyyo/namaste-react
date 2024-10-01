@@ -82,7 +82,7 @@ const Body = () => {
               setListOfRestaurants(filtered);
             }}
           >
-            Top Rated Restaurant
+            Top Rated Restaurants
           </button>
         </div>
         <div className="m-4 p-4 flex items-center">

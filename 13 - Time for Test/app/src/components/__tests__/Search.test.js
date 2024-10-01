@@ -41,3 +41,24 @@ it("should search restaurant list for burger text input", async () => {
 
   expect(cardsAfterSearch.length).toBe(1);
 })
+
+it("should filter top rated restaurants", async () => {
+
+  await act(async () => {
+    render(
+      <BrowserRouter>
+        <Body />
+      </BrowserRouter>
+    );
+  });
+
+  const cardsBeforeFilter = screen.getAllByTestId("resCard");
+
+  expect(cardsBeforeFilter.length).toBe(8);
+  
+  const topRatedButton = screen.getByRole("button", { name: "Top Rated Restaurants" });
+  fireEvent.click(topRatedButton);
+
+  const cardsAfterFilter = screen.getAllByTestId("resCard");
+  expect(cardsAfterFilter.length).toBe(8);
+})
