@@ -21,7 +21,8 @@ const Cart = () => {
         >
           Clear Cart
         </button>
-        <RestaurantItemList items={cartItems} />
+        {cartItems.length ? <RestaurantItemList items={cartItems} /> : <h2>Cart is empty.</h2>}
+        
       </div>
     </div>
   )
