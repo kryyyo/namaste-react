@@ -1,4 +1,4 @@
-import RestaurantCard, { withOpenLabel} from "./RestaurantCard";
+import RestaurantCard, { withOpenLabel } from "./RestaurantCard";
 import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -47,29 +47,30 @@ const Body = () => {
     return <Shimmer />;
   }
 
-  return (listOfRestaurants === 0 ? <Shimmer /> : 
+  return (listOfRestaurants === 0 ? <Shimmer /> :
     <div className="body">
       {/* Search */}
       <div className="filter flex">
         <div className="m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black rounded-lg"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
-          <button 
+          <button
             className="px-4 py-2 bg-green-100 m-4 rounded-lg"
             onClick={() => {
-            // Filter the restaurant cards and update the UI
-            // searchText
-            const filteredRestaurants = listOfRestaurants.filter(res =>
-              res.info.name.toLowerCase().includes(searchText.toLowerCase())
-            );
-            setFilteredRestaurants(filteredRestaurants);
-          }}>
+              // Filter the restaurant cards and update the UI
+              // searchText
+              const filteredRestaurants = listOfRestaurants.filter(res =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setFilteredRestaurants(filteredRestaurants);
+            }}>
             Search
           </button>
         </div>
@@ -86,7 +87,7 @@ const Body = () => {
         </div>
         <div className="m-4 p-4 flex items-center">
           <label>UserName: </label>
-          <input className="border border-black mx-1 p-2" value={loggedInUser} onChange={(e) => setUsername(e.target.value)}/>
+          <input className="border border-black mx-1 p-2" value={loggedInUser} onChange={(e) => setUsername(e.target.value)} />
         </div>
       </div>
       {/* Restaurant Container */}
