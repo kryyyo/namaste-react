@@ -3,7 +3,7 @@ import Contact from "../Contact";
 import "@testing-library/jest-dom";
 
 describe("Contact Us Page Test Case", () => {
-  test("Should load contact us component", () => {
+  it("Should load contact us component", () => {
     render(<Contact />);
 
     const heading = screen.getByRole("heading");
@@ -12,7 +12,7 @@ describe("Contact Us Page Test Case", () => {
     expect(heading).toBeInTheDocument();
   });
 
-  test("Should load button inside contact us component", () => {
+  it("Should load button inside contact us component", () => {
     render(<Contact />);
 
     const button = screen.getByText("Submit");
